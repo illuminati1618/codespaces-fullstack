@@ -1,0 +1,9 @@
+[submodule "pages"]
+	path = pages
+	url = https://github.com/Open-Coding-Society/pages
+[submodule "flask"]
+	path = flask
+	url = https://github.com/Open-Coding-Society/flask
+[submodule "spring"]
+	path = spring
+	url = https://github.com/Open-Coding-Society/spring
