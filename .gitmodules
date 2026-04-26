@@ -1,9 +1,9 @@
 [submodule "pages"]
 	path = pages
-	url = https://github.com/Open-Coding-Society/pages
+	url = https://github.com/CyberLord09/pages-tracking
 [submodule "flask"]
 	path = flask
-	url = https://github.com/Open-Coding-Society/flask
+	url = https://github.com/Open-Coding-Society/flask-tracking
 [submodule "spring"]
 	path = spring
-	url = https://github.com/Open-Coding-Society/spring
+	url = https://github.com/CyberLord09/spring-tracking
