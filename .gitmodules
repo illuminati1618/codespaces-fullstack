@@ -11,4 +11,4 @@
 [submodule "spring"]
 	path = spring
 	url = https://github.com/CyberLord09/spring-tracking
-	branch = main
+	branch = master
