@@ -2,7 +2,7 @@
 set -e
 
 echo "=== Initializing submodules ==="
-git submodule update --init --recursive
+git submodule update --init
 
 echo "=== Installing shared system tools ==="
 sudo apt-get update
