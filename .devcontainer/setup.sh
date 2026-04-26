@@ -8,6 +8,21 @@ git config --local submodule.recurse false
 echo "=== Initializing top-level submodules only ==="
 git -c submodule.recurse=false submodule update --init --depth 1 -- flask pages spring
 
+echo "=== Fixing broken nested submodule in pages ==="
+cd pages
+
+# Force-remove any leftover broken submodule state
+rm -rf .git/modules/_themes/minima_alt || true
+rm -rf _themes/minima_alt || true
+
+# If git still thinks it's a submodule, clean it
+git rm -f _themes/minima_alt 2>/dev/null || true
+
+# Disable submodule recursion inside pages repo itself
+git config --local submodule.recurse false
+
+cd ..
+
 echo "=== Installing shared system tools ==="
 sudo apt-get update
 sudo apt-get install -y python3-pip python-is-python3 python3-venv build-essential zlib1g-dev sqlite3 lsof
