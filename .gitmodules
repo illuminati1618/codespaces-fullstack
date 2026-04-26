@@ -1,0 +1,14 @@
+[submodule "pages"]
+	path = pages
+	url = https://github.com/CyberLord09/pages-tracking
+	branch = main
+
+[submodule "flask"]
+	path = flask
+	url = https://github.com/Open-Coding-Society/flask-tracking
+	branch = main
+
+[submodule "spring"]
+	path = spring
+	url = https://github.com/CyberLord09/spring-tracking
+	branch = main
