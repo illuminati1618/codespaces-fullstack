@@ -2,7 +2,7 @@
 set -e
 
 echo "=== Initializing submodules ==="
-git submodule update --init
+git -c submodule.recurse=false submodule update --init --depth 1 flask pages spring
 
 echo "=== Installing shared system tools ==="
 sudo apt-get update
