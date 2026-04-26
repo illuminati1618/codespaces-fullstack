@@ -1,8 +1,12 @@
 #!/bin/bash
 set -e
 
-echo "=== Initializing submodules ==="
-git -c submodule.recurse=false submodule update --init --depth 1 flask pages spring
+echo "=== Disabling recursive submodules ==="
+git config --global submodule.recurse false
+git config --local submodule.recurse false
+
+echo "=== Initializing top-level submodules only ==="
+git -c submodule.recurse=false submodule update --init --depth 1 -- flask pages spring
 
 echo "=== Installing shared system tools ==="
 sudo apt-get update
